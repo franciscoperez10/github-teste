@@ -1,26 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre o CESAE Digital</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Olá, Turma!</h1>
-    <h2>Sejam bem-vindos ao curso de Git e GitHub!</h2>
 
-    <form action="" method="post">
-        <div>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <br>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <br>
-        <button type="submit">Enviar</button>
-    </form>
+  <header>
+    <img src="https://www.cesaedigital.pt/fldrSite/img/cesae-digital-logo.svg" alt="Logótipo do CESAE Digital" width="130">
+  </header>
+
+  <nav>
+    <a href="index.html">Sobre o CESAE</a> |
+    <a href="multimedia.html">Multimédia</a> |
+    <a href="form.html">Formulário</a> |
+    <a href="https://www.cesaedigital.pt/" target="_blank">Ir para site oficial</a>
+  </nav>
+
+  <hr>
+
+  <main>
+    <h1>Sobre o CESAE Digital</h1>
+
+    <p>O CESAE Digital é um centro de excelência dedicado ao desenvolvimento de competências digitais, essencial para enfrentar os desafios da transformação digital em Portugal.</p>
+
+    <p>O CESAE Digital renasceu em julho de 2020 no quadro dos novos desafios tecnológicos e sociais da digitalização que recomendam a criação de um centro de formação capaz de responder às necessidades de qualificação dos recursos humanos indispensáveis para a afirmação de uma estratégia sustentável de crescimento económico e de coesão social, constituindo ainda um instrumento de política pública orientado para a manutenção e melhoria das condições de empregabilidade dos ativos empregados e desempregados e para o desenvolvimento da competitividade na economia.</p>
+
+    <p>Deste modo, o IEFP, IP e a AEP acordaram a criação de um Centro Protocolar, o CESAE Digital – Centro para o Desenvolvimento de Competências Digitais, outorgado por protocolo entre o Instituto do Emprego e Formação Profissional, IP (IEFP, IP) e a Associação Empresarial de Portugal (AEP) e publicada na portaria nº 169/2020 de 10 de julho.</p>
+
+    <p>Promover a combinação de experimentação com inovação contínua como instrumento para o desenvolvimento das competências digitais e a adaptação a um ambiente tecnológico em constante transformação.</p>
+
+    <h2>Objetivos</h2>
+
+    <p>O CESAE Digital passa a ser um Centro Protocolar ou Centro de Formação Profissional de Gestão Participada, sendo um organismo dotado de personalidade jurídica de direito público sem fins lucrativos. Estes são os seus objetivos:</p>
+
+    <ol>
+      <li>Responder às necessidades de formação designadamente nas áreas da economia digital e (re)qualificação profissional de ativos empregados e desempregados.</li>
+      <li>Potenciar o desenvolvimento das competências digitais, enquanto instrumento de promoção da empregabilidade dos ativos.</li>
+      <li>Promover a conceção e participação em percursos formativos qualificantes de jovens desempregados, com o objetivo de melhorar a sua empregabilidade.</li>
+    </ol>
+
+    <h2>Natureza, atribuições e competências</h2>
+
+    <p>São atribuições do CESAE Digital promover a realização de formação profissional e de reconhecimento, validação e certificação de competências, a prestação de serviços e apoio técnico a entidades no âmbito das áreas das Tecnologias da Informação e do Digital, prosseguindo a seguinte missão:</p>
+
+    <ul>
+      <li>Valorização dos ativos conducente à <span style="background-color: red; color: white;">qualificação, certificação e aperfeiçoamento técnico dos profissionais e dos cidadãos em geral</span>, com especial ênfase nos, facultando-lhes a frequência de ações reskilling e upskilling que favoreça o (re)ingresso rápido e de qualidade no mercado de trabalho e a melhoria da sua empregabilidade;</li>
+      <li>Valorização da capacidade empresarial, através do desenvolvimento de ações de formação, consultoria e apoio técnico destinadas a empresas, associações empresariais, ou outros agentes económicos e/ou parceiros sociais, podendo, ainda, desenvolver ações de cooperação com entidades estrangeiras, tanto na área formativa, como de apoio técnico ou consultivo.</li>
+    </ul>
+  </main>
+
+  <section id="contacto">
+  <h2>Contacto</h2>
+
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <fieldset>
+      <legend>Género:</legend>
+      <input type="radio" id="feminino" name="genero" value="feminino">
+      <label for="feminino">Feminino</label>
+      <input type="radio" id="masculino" name="genero" value="masculino">
+      <label for="masculino">Masculino</label>
+    </fieldset>
+    <br>
+
+    <label for="turma">Turma:</label>
+    <select id="turma" name="turma">
+      <option value="web" selected>Web Developer &amp; Mobile</option>
+      <option value="outra">Outra</option>
+    </select>
+    <br><br>
+
+    <label for="mensagem">Mensagem:</label>
+    <br>
+    <textarea id="mensagem" name="mensagem" cols="30" rows="3"></textarea>
+    <br><br>
+
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+  <footer>
+    <hr>
+    <h3>Associados</h3>
+    <img src="https://www.cesaedigital.pt/fldrSite/img/logo-Pessoas2030.svg" alt="Pessoas 2030, Portugal 2030 e Cofinanciado pela União Europeia" height="50">
+    <img src="https://www.cesaedigital.pt/fldrSite/img/logo-PRR.svg" alt="PRR, República Portuguesa e Financiado pela União Europeia" height="50">
+    <img src="https://www.cesaedigital.pt/fldrSite/img/logo-Anqep.svg" alt="ANQEP" height="50">
+    <div class="social-media">
+  <a href="https://www.instagram.com/cesae.digital/" target="_blank"><img src="images/instagram.svg" alt="Instagram do CESAE Digital" width="30"></a>
+  <a href="https://www.facebook.com/CesaeDigital" target="_blank"><img src="images/facebook.svg" alt="Facebook do CESAE Digital" width="30"></a>
+  <a href="https://www.linkedin.com/school/cesae-digital" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn do CESAE Digital" width="30"></a>
+  <a href="https://www.youtube.com/@cesaedigital" target="_blank"><img src="images/youtube.svg" alt="YouTube do CESAE Digital" width="30"></a>
+</div class="social-media">
+    <hr>
+    <p>Desenvolvido por Francisco Perez</p>
+  </footer>
+
 </body>
 </html>

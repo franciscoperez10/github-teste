@@ -1,0 +1,61 @@
+/* 1. Toda a página: cor de fundo e margem */
+body {
+  background-color: bisque;
+  margin: 20px;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 2. header e footer com o texto centrado */
+header,
+footer {
+  text-align: center;
+}
+
+/* 3. imagem do header com 50% da largura do header */
+header img {
+  width: 50%;
+}
+
+/* 4. nav e footer: fundo grey, padding e margin */
+nav,
+footer {
+  background-color: grey;
+  padding: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* 5. links da nav a branco */
+nav a {
+  color: white;
+}
+
+/* 6. parágrafos justificados (só no main, para o texto do rodapé continuar centrado) */
+main p {
+  text-align: justify;
+}
+
+/* Trabalho autónomo 2: outros elementos de estilo */
+h1,
+h2,
+h3 {
+  color: darkslategray;
+}
+
+main p,
+main li {
+  line-height: 1.5;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: bisque;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
