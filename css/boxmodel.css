@@ -1,0 +1,19 @@
+.block1 {
+    background: green;
+    width: 250px;
+    padding: 10px 20px 30px 40px; /* top right bottom left, per order */
+    border: 10px solid yellow;
+}
+
+.block2 {
+    background: red;
+
+}
+
+.block3 {
+    background-color: lightgreen;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border: 10px solid pink;
+}
