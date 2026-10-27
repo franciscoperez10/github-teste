@@ -1,0 +1,67 @@
+/* Página */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d1148;
+}
+
+/* Pai: o ponto de referência (position: relative) */
+.container {
+    position: relative;
+    width: 980px;          
+    height: 300px;  
+    padding: 400px 20px;
+    margin: 0 auto;          /* centra horizontalmente */
+    top:200px;       
+
+}
+
+/* Cartão: o box model */
+.card {
+    box-sizing: border-box;      /* os 300px já incluem padding e borda */
+    width: 300px;
+    padding: 16px;               /* dentro da borda */
+    border: 3px solid #1d1148;   /* a moldura */
+    border-radius: 20px;         /* cantos arredondados */
+    background-color: #ffffff;
+    text-align: center;
+
+    /* Posicionamento dentro do pai relative */
+    position: absolute;
+    top: 0;
+}
+
+.card-francisco {
+    left: 0;
+}
+
+.card-sara {
+    left: 340px;     /* 300px do 1.º cartão + 40px de espaço */
+}
+
+.card-vitor {
+    left: 680px;     /* 2 × 340px */
+}
+
+/* Imagem */
+.foto {
+    
+    width: 100%;
+    height: 140px;
+    object-fit: cover;           /* recorta a foto sem a deformar */
+    border-radius: 12px;
+}
+
+/* Nome */
+.card h2 {
+    margin: 16px 0 8px;
+    font-size: 30px;
+}
+
+/* Descrição */
+.card p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
