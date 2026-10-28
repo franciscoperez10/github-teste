@@ -8,12 +8,14 @@ body {
 
 /* Pai: o ponto de referência (position: relative) */
 .container {
-    position: relative;
+    
+    position: relative;  /* para que os cartões possam ser posicionados relativamente a ele */
     width: 980px;          
     height: 300px;  
     padding: 400px 20px;
     margin: 0 auto;          /* centra horizontalmente */
-    top:200px;       
+    top:200px;     
+      
 
 }
 
@@ -27,7 +29,7 @@ body {
     background-color: #ffffff;
     text-align: center;
 
-    /* Posicionamento dentro do pai relative */
+    /* Posicionamento dentro do element relative */
     position: absolute;
     top: 0;
 }
