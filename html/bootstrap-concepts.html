@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Grid System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS - Apenas para demonstração visual -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .example {
+            padding: 50px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .example h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid-box {
+            background-color: #29ACD0;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            border: 2px solid white;
+        }
+
+        .sidebar {
+            background-color: #1685AA;
+        }
+
+        .article {
+            min-height: 140px;
+        }
+
+        .small-box {
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- ================================= -->
+        <!-- EXAMPLE 1 - BASIC GRID             -->
+        <!-- ================================= -->
+
+        <section class="example">
+
+            <h2>Example 1 - Basic Grid</h2>
+
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="grid-box">
+                        Main Content
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="grid-box sidebar">
+                        Sidebar
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- EXAMPLE 2 - NESTED GRID            -->
+        <!-- ================================= -->
+
+        <section class="example">
+
+            <h2>Example 2 - Nested Grid</h2>
+
+            <div class="row">
+
+                <!-- Main Content: 8 columns -->
+                <div class="col-md-8">
+
+                    <div class="row">
+
+                        <!-- Header: 12 columns -->
+                        <div class="col-12">
+
+                            <div class="grid-box">
+                                Header
+                            </div>
+
+                        </div>
+
+                        <!-- Article 1: 6 columns -->
+                        <div class="col-md-6">
+
+                            <div class="grid-box article">
+                                Article 1
+
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Article 2: 6 columns -->
+                        <div class="col-md-6">
+
+                            <div class="grid-box article">
+                                Article 2
+
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Footer: 12 columns -->
+                        <div class="col-12">
+
+                            <div class="grid-box">
+                                Footer
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Sidebar: 4 columns -->
+                <div class="col-md-4">
+
+                    <div class="grid-box sidebar h-100">
+                        Sidebar
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- EXAMPLE 3 - RESPONSIVE GRID        -->
+        <!-- ================================= -->
+
+        <section class="example">
+
+            <h2>Example 3 - Responsive Grid</h2>
+
+            <p class="text-center mb-4">
+                Resize the browser window to see the changes.
+            </p>
+
+            <div class="row g-1">
+
+                <!-- Column 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 9 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 10 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 11 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+                <!-- Column 12 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    <div class="grid-box small-box">
+                        col-12<br>
+                        col-sm-6<br>
+                        col-md-4<br>
+                        col-lg-3<br>
+                        col-xl-2<br>
+                        col-xxl-1
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
