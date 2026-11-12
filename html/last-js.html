@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A minha página</title>
+  <script src="../js/last.js" defer></script>
+  <style>
+    .highlighted {
+      color: teal;
+      font-weight: bold;
+    }
+
+    body.dark-mode {
+      background: #070b10;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="pageTitle">A minha página</h1>
+  <p id="welcomeMessage">Bem-vindo!</p>
+  <p id="statusMessage">A página está pronta</p>
+
+  <p class="message">Primeira mensagem</p>
+  <p class="message">Segunda mensagem</p>
+
+  <section aria-label="Exemplos de interação">
+    <button id="helloButton" type="button">Clica aqui</button>
+    <p id="resultMessage"></p>
+
+    <label for="searchInput">Pesquisa</label>
+    <input id="searchInput" type="text">
+    <p id="previewMessage"></p>
+
+    <label for="ageInput">Idade</label>
+    <input id="ageInput" type="number" min="0">
+    <p id="ageMessage"></p>
+
+    <label for="themeSelect">Tema</label>
+    <select id="themeSelect">
+      <option value="light">Claro</option>
+      <option value="dark">Escuro</option>
+    </select>
+    <p id="themeMessage"></p>
+  </section>
+
+  <form id="nameForm">
+    <label for="nameInput">O teu nome</label>
+    <input id="nameInput" type="text" required>
+    <button type="submit">Enviar</button>
+    <p id="feedbackMessage"></p>
+  </form>
+
+  <h2>Lista de tarefas</h2>
+  <ul id="taskList"></ul>
+</body>
+</html>
