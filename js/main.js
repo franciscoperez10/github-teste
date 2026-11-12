@@ -3,7 +3,7 @@ console.log("Hello, World!");
 let firstName = "Francisco";
 let lastName = "Perez";
 let age = 31;
-let profession = "Software Engineer";
+let profession = "Product Manager";
 let isApproved = true;
 
 let interestRate = 0.05
@@ -16,7 +16,7 @@ let person = {
     firstName: "Francisco",
     lastName: "Perez",
     age: 31,
-    profession: "Software Engineer",
+    profession: "Product Manager",
     isApproved: true
 };
 
@@ -43,4 +43,8 @@ console.log(`The username entered is: ${username}`);
 document.getElementById("submitButton").onclick = function() {
     username = document.getElementById("usernameInput").value;
     document.getElementById("myH2").innerText = `Welcome, ${username}!`;
+}
+
+document.getElementById("myButton").onclick = function() {
+    window.alert("Olá Turma!");
 }
